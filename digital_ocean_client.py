@@ -29,7 +29,6 @@ class DigitalOceanClient:
             f'&client_id={self.client_id}'
             f'&scope={scope}&response_type=code'
         )
-        print(full_url)
         return full_url
 
     def finish_oauth(self, code):
