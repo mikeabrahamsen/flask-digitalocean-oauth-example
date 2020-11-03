@@ -22,7 +22,7 @@ def index():
 
 
 @app.route('/digitalocean', methods=['GET'])
-def link_provider():
+def droplets():
     code = request.args.get('code', None)
     error = None
     if code:
